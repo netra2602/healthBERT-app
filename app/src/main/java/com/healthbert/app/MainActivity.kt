@@ -13,7 +13,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val backToDashboardButton = findViewById<TextView>(R.id.backToDashboardButton)
 
+        backToDashboardButton.setOnClickListener {
+            finish()
+        }
         model = HealthBERTModel()
 
         val editTextReview = findViewById<EditText>(R.id.editTextReview)

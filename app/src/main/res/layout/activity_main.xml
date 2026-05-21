@@ -9,6 +9,17 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <TextView
+            android:id="@+id/backToDashboardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back to Dashboard"
+            android:textColor="#6D52AE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp" />
+
         <EditText
             android:id="@+id/editTextReview"
             android:layout_width="match_parent"

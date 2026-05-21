@@ -6,14 +6,72 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthBERT">
+
+        <!-- Splash Screen: First screen when app opens -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <!-- Login Screen: Opens after splash screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Signup Screen: Opens from login screen -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Home Dashboard: Opens after login/signup -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Profile Page: Opens from dashboard top-right menu -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Settings Page: Opens from dashboard top-right menu -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- About Us Page: Opens from dashboard top-right menu -->
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- Quick Button Pages -->
+        <activity
+            android:name=".UploadReportActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HealthHistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RecentActivityActivity"
+            android:exported="false" />
+
+        <!-- Review Analysis Page -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>

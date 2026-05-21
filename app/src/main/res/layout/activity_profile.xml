@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FB"
+    android:fillViewport="true"
+    android:overScrollMode="always">
+
+    <LinearLayout
+        android:id="@+id/profileRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="160dp">
+
+        <TextView
+            android:id="@+id/backToDashboardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back to Dashboard"
+            android:textColor="#2563EB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Profile"
+            android:textColor="#1E293B"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Manage your personal and medical details"
+            android:textColor="#64748B"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/genderEditText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:hint="Gender"
+            android:inputType="text"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/medicalConditionsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="14dp"
+            android:gravity="top"
+            android:hint="Medical Conditions"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="14dp"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/allergiesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="14dp"
+            android:gravity="top"
+            android:hint="Allergies"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="14dp"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8" />
+
+        <EditText
+            android:id="@+id/emergencyContactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="14dp"
+            android:gravity="top"
+            android:hint="Emergency Contact"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="14dp"
+            android:textColor="#1E293B"
+            android:textColorHint="#94A3B8" />
+
+        <Button
+            android:id="@+id/saveProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2563EB"
+            android:text="Save Profile"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
